@@ -1,0 +1,20 @@
+hours = input("Enter Hours:")
+hour = float(hours)
+
+rate_per_hour = input( "Enter hourly pay: " )
+pay = float(rate_per_hour)
+
+#if total hours are less than 40 or equal to 40; multiply rate (times) pay, to find gross pay.
+if hour <= 40:
+    b = hour * pay
+    print( "gross pay", b )
+
+#if overtime is worked; find the gross pay amount, with
+elif hour > 40:
+    overtime_hours = hour - 40
+    overtime_pay = pay *1.5
+    total_overtime_gross_pay = overtime_hours * overtime_pay
+    c =total_overtime_gross_pay
+    b = 40 * pay
+    d = b + c
+    print( "gross pay", d  )
